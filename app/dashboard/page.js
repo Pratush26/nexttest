@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default async function DashboardPage() {
   const session = await getServerSession(authOptions);
-  if (!session) notFound();
+  // if (!session) notFound();
 
   return (
     <main className="flex flex-col items-center justify-center h-screen">
